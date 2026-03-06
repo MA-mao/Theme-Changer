@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+
+
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.theme-blue    { --primary: #2563eb; --bg: #9cccfd; --text: #0f172a; --nav: #1e293b; }
+.theme-pink    { --primary: #e11d48; --bg: #f5adb1; --text: #1c0a0d; --nav: #881337; }
+.theme-purple  { --primary: #7c3aed; --bg: #d8bcf3; --text: #1e0a2e; --nav: #4c1d95; }
+.theme-green   { --primary: #059669; --bg: #9bf0d6; --text: #022c22; --nav: #064e3b; }
+.theme-yellow  { --primary: #b45309; --bg: #f3e2a0; --text: #1c1001; --nav: #78350f; }
+.theme-dark    { --primary: #60a5fa; --bg: #0f172a; --text: #e2e8f0; --nav: #020617; }
+
+.theme-blue, .theme-pink, .theme-purple,
+.theme-green, .theme-yellow, .theme-dark {
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+nav {
+  background-color: var(--nav) !important;
+}
+
+nav a, nav span {
+  color: #fff !important;
+}
+
+h1, h2 {
+  color: var(--text);
+}
+
+a {
+  color: var(--primary);
+}
+
+button {
+  background-color: var(--primary) !important;
+  color: #fff !important;
+}
+
+input, textarea {
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+  border-color: var(--primary) !important;
+}
+
+.theme-dark .bg-gray-100 {
+  background-color: #1e293b !important;
+  color: #e2e8f0 !important;
+}
